@@ -1,0 +1,13 @@
+<apex:page controller="DoctorbestLogin" showHeader="true" sidebar="true">
+    <apex:form >
+        <apex:pageBlock title="Welcome to the Best Doctors Inc. ">
+            <apex:pageBlockSection title="Please Enter your Login Details ">
+                Username: <apex:inputtext value="{!username}"/>
+                Password: <apex:inputsecret value="{!password}"/>
+                <div>           
+                    <apex:commandbutton value="Login" action="{!login}"/>
+                </div>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
